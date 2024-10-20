@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Professional Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function showMore(id) {
+            var moreText = document.getElementById(id);
+            moreText.style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero blog-hero">
+        <h1>Our Blog</h1>
+    </header>
+
+    <section class="content">
+        <article>
+            <h2>Latest Trends in Web Design</h2>
+            <p>Web design is constantly evolving with new trends that shape the digital landscape...</p>
+            <button onclick="showMore('post1')">Read More</button>
+            <div id="post1" style="display:none;">
+                <p>From minimalist layouts to bold typography, the trends in web design today are more user-centered and aesthetically pleasing than ever.</p>
+            </div>
+        </article>
+
+        <article>
+            <h2>How SEO Impacts Your Business</h2>
+            <p>SEO remains one of the most important strategies for growing your online presence...</p>
+            <button onclick="showMore('post2')">Read More</button>
+            <div id="post2" style="display:none;">
+                <p>Good SEO can drive traffic, improve visibility, and increase conversions, making it essential for any business aiming for growth.</p>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Professional Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

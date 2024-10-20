@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Professional Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero services-hero">
+        <h1>Our Services</h1>
+    </header>
+
+    <section class="content">
+        <h2>What We Offer</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>Graphic Design</li>
+            <li>Digital Marketing</li>
+            <li>SEO Optimization</li>
+        </ul>
+        <p>Each service is carefully designed to meet the unique needs of your business, ensuring you achieve your goals.</p>
+        
+        <h2>Get a Quote</h2>
+        <form action="submit_quote.html" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="service">Service of Interest:</label>
+            <select id="service" name="service">
+                <option value="web-development">Web Development</option>
+                <option value="graphic-design">Graphic Design</option>
+                <option value="digital-marketing">Digital Marketing</option>
+                <option value="seo-optimization">SEO Optimization</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Professional Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
